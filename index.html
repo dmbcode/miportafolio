@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Diego Manjarres</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1>DM</h1>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre Mi</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hola, soy <span>Diego Manjarres</span></h1>
+                <p>
+                    Desarrollador Frontend Junior apasionado por crear interfaces 
+                    web atractivas y funcionales. Siempre aprendiendo nuevas 
+                    tecnologías y mejorando mis habilidades.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+                    <a href="CV Diego Manjarres - Desarrollador Frontend Junior.pdf" class="btn btn-secondary">Descargar CV</a>
+                </div>
+            </div>
+            
+            <div class="hero-image-container">
+              <div class="circle-container">
+                <img src="imagen.png" alt="Ilustración de desarrollador web" class="hero-image">
+              </div>
+              <div class="accent-circle accent-circle-yellow">⚡</div>
+              <div class="accent-circle accent-circle-green">🔗</div>
+            </div>
+            
+        </div>
+    </section>
+
+  <section id="sobre-mi" class="sobre-mi">
+    <h2>Sobre Mi</h2>
+    <p>Soy un Ingeniero de Software con pasión por la tecnología, con enfoque en desarrollo Frontend. 
+      Apasionado por transformar ideas abstractas en productos digitales tangibles y funcionales.
+    </p>
+    <div class="container-grid">
+      <div class="feature-card">
+        <div class="icon-box" style="color:#ff6b6b;">🎯</div>
+          <h3>Enfoque en UX</h3>
+            <p>Diseño pensando siempre en la experiencia del usuario final</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon-box" style="color:#fcc419;">⚡</div>
+          <h3>Rendimiento</h3>
+            <p>Optimizo cada línea de código para máxima velocidad</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon-box" style="color:#4c6ef5;">📱</div>
+          <h3>Responsive</h3>
+            <p>Diseños que funcionan perfectamente en cualquier dispositivo</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades" class="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon html-icon"><span>HTML</span></div>
+          <h3>HTML5</h3>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-icon css-icon"><span>CSS</span></div>
+          <h3>CSS3</h3>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-icon js-icon"><span>JS</span></div>
+          <h3>JavaScript</h3>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-icon git-icon"><span>🐙</span></div>
+          <h3>Git</h3>
+      </div>
+      
+      <div class="skill-card">
+        <div class="skill-icon responsive-icon"><span>📱</span></div>
+          <h3>Responsive</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="proyectos">
+    <h2>Proyectos</h2>
+    <div class="proyectos-content">
+      <div class="proyecto-card">
+        <img src="landing.png" alt="landing-page">
+        <h3>Landing Page</h3>
+        <p>Desarrollo de una Landing Page profesional para una agencia de abogados, totalmente responsive y buen diseño.</p>
+        <a href="https://sinergialegal.netlify.app/#inicio" target="_blank" class="project-link">Ver proyecto →</a>
+      </div>
+      
+      <div class="proyecto-card">
+        <img src="dashboard.png" alt="dashboard">
+        <h3>Dashboard</h3>
+        <p>Proyecto sobre un dashboard para barberias diseñado para optimizar las operaciones diarias de pequeñas y medianas barberías.</p>
+        <a href="https://dashboardbarberia.netlify.app/" target="_blank" class="project-link">Ver proyecto →</a>
+      </div>
+
+      <div class="proyecto-card">
+        <img src="sitioweb.png" alt="sitio-web">
+        <h3>Sitio Web Responsive</h3>
+        <p>Sitio web para un colegio ficticio, diseñado como proyecto modelo para futuros clientes del sector educativo.</p>
+        <a href="https://sitiowebedutech.netlify.app/" target="_blank" class="project-link">Ver proyecto →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>¡Conectemos!</h2>
+    <p>Estoy buscando oportunidades para crecer profesionalmente. ¡Me encantaría formar parte de tu equipo!</p>
+    <div class="contact-buttons">
+      <a href="mailto:maria@ejemplo.com" class="email-btn">
+        📧 diegomanjarresburgos@gmail.com
+      </a>
+      <a href="www.linkedin.com/in/diego-manjarres-burgos" target="_blank" class="social-btn">
+        💼 LinkedIn
+      </a>
+      <a href="https://github.com/dmbcode" target="_blank" class="social-btn">
+        🐙 GitHub
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Diego Manjarres. Todos los derechos reservados.</p>
+  </footer>
+    
+</body>
+</html>
