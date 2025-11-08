@@ -496,7 +496,7 @@ header {
     height: 100%;
     background-color: #0a001b;
     position: fixed;
-    top: 12%;
+    top: 11%;
     right: 0;
     box-shadow: rgba(0, 0, 0, 0.1);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -529,5 +529,6 @@ header {
   .contact-buttons a {
     justify-content: center;
   }
+
 
 }
