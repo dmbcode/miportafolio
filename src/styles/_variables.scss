@@ -1,0 +1,24 @@
+// Colors
+$bg-primary: #0a0a0a; // Deep black/dark grey
+$bg-secondary: #121212; // Slightly lighter for cards/nav
+$text-primary: #f8fafc; // Off-white for high contrast headings
+$text-secondary: #94a3b8; // Slate muted text
+$accent-primary: #00f2fe; // Neon Cyan
+$accent-secondary: #4facfe; // Neon Blue
+$accent-gradient: linear-gradient(90deg, $accent-primary 0%, $accent-secondary 100%);
+
+// Typography
+$font-family-base: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+$font-family-heading: 'Outfit', sans-serif;
+
+// Transitions & Animations
+$transition-base: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+$transition-slow: all 0.5s ease-in-out;
+$neon-glow: 0 0 10px rgba(0, 242, 254, 0.5), 0 0 20px rgba(0, 242, 254, 0.3);
+$card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+
+// Breakpoints
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+$bp-large: 1280px;

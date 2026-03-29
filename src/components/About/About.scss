@@ -1,0 +1,91 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.about {
+  background-color: $bg-secondary; // different background for contrast
+
+  .about-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  .about-image {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      right: 15px;
+      bottom: 15px;
+      border: 3px solid $accent-primary;
+      border-radius: 10px;
+      z-index: 1;
+      transition: $transition-base;
+    }
+
+    &:hover::after {
+      transform: translate(10px, 10px);
+      box-shadow: $neon-glow;
+    }
+
+    .img-wrapper {
+      position: relative;
+      z-index: 2;
+      border-radius: 10px;
+      overflow: hidden;
+      aspect-ratio: 1 / 1; // square
+      background-color: lighten($bg-secondary, 5%);
+      @include flex-center;
+
+      // Placeholder aesthetic
+      border: 1px solid rgba(255, 255, 255, 0.05);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: $transition-base;
+
+
+        &:hover {
+          filter: grayscale(0%) contrast(1);
+        }
+      }
+    }
+  }
+
+  .about-text {
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: $text-primary;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: $text-secondary;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .highlight {
+      color: $accent-primary;
+      font-weight: 500;
+    }
+  }
+}

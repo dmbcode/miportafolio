@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.skills {
+  background-color: $bg-secondary;
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .skill-item {
+    @include flex-column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: $bg-primary;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: $transition-base;
+    cursor: default;
+
+    .skill-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: $text-secondary;
+      transition: $transition-base;
+    }
+
+    .skill-name {
+      font-weight: 500;
+      color: $text-primary;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: $neon-glow;
+      border-color: rgba(0, 242, 254, 0.3);
+
+      .skill-icon {
+        color: $accent-primary;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
