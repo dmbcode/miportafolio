@@ -7,9 +7,9 @@ const projectsData = [
     id: 1,
     title: 'Barber Dashboard',
     description: 'Un panel de administración completo para gestionar citas, servicios y usuarios con gráficos interactivos y análisis de datos en tiempo real.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
+    tech: ['HTML', 'CSS', 'JavaScript', 'React'],
     /*github: '#',*/
-    live: 'https://dashboardbarberia.netlify.app/',
+    live: 'https://barberprodashboard.netlify.app/',
   },
   {
     id: 2,
